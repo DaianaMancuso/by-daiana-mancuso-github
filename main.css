@@ -340,6 +340,29 @@ p {
 
 /* Inicio de trancisiones y animaciones */
 
+/* Del nav bar */
+ .nav-bar .menu-nav li a {
+        position: relative;
+        overflow: hidden;
+        display: inline-block;
+        text-decoration: none;
+        color: rgb(194, 61, 165);
+        }
+        a:after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: -100%;
+        width: 100%;
+        height: 2px;
+        background: #333;
+        transition: left .8s;
+        }
+        a:hover:after {
+        left: 0;
+        }
+
+
 /* de fotos de productos*/
 
 .torta-p:hover, .postre-p:hover, .alfajor-p:hover {
